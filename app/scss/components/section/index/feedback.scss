@@ -1,0 +1,11 @@
+.feedback{
+    padding-bottom: 180px;
+    &__form {
+        margin-top: 38px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+}

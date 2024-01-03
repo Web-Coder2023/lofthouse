@@ -9,11 +9,17 @@
 @import './components/general/header.scss';
 
 /* Index page */
-@import './components/section/nav.scss';
-@import './components/section/info.scss';
 @import './components/section/index/benefits.scss';
 @import './components/section/index/appartments.scss';
 @import './components/section/index/cta.scss';
+@import './components/section/index/video.scss';
+@import './components/section/index/map.scss';
+@import './components/section/index/feedback.scss';
+
+/* Blocks */
+@import './components/section/nav.scss';
+@import './components/section/info.scss';
+@import './components/section/form.scss';
 
 @import './components/general/footer.scss';
 @import './libs/swiper.scss';

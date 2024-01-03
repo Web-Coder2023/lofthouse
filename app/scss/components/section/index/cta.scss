@@ -10,8 +10,8 @@
 
     &__text {
         margin-top: 17px;
+        max-width: 500px;
         p {
-            max-width: 540px;
             font-size: 16px;
             line-height: 150%;
         }
@@ -19,6 +19,12 @@
         p + p {
             margin-top: 1em;
         }
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 30px;
     }
 
 }
