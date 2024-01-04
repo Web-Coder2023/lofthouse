@@ -1,13 +1,29 @@
 .benefits {
     padding: 120px 0;
+    position: relative;
+
+    &::after{
+        content: 'II';
+        position: absolute;
+        top: 0;
+        left: calc(50% + 555px);
+        transform: translate(-50%, 0%);
+        font-size: 400px;
+        opacity: 0.02;
+        line-height: 1.15;
+        font-weight: 700;
+        font-family: $PlayfairDisplay;
+    }
+
     &__list {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(193px, 1fr));
-        gap: 70px;
-        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        @media screen and (max-width: $tablet) {
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        }
 
         li {
-            margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -19,6 +35,17 @@
                 font-size: 20px;
                 font-weight: 300;
                 line-height: 135%;
+                @media screen and (max-width: $mobile) {
+                    font-size: 18px;
+                }
+            }
+        }
+        &-img {
+            width: 80px;
+            height: 80px;
+            @media screen and (max-width: $tablet) {
+                width: 60px;
+                height: 60px;
             }
         }
     }

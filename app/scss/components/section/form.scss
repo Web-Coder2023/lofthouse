@@ -23,5 +23,8 @@
         text-align: center;
         font-size: 13px;
         line-height: 123.077%;
+        @media screen and (max-width: $tablet){
+            grid-row: 4 / 5;
+        }
     }
 }

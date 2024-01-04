@@ -4,11 +4,23 @@
     padding-top: 30px;
     padding-bottom: 74px;
     
+    
     &__container {
         min-height: 840px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media screen and (max-width: $tablet) {
+            min-height: unset;
+            row-gap: 50px;
+        }
+    }
+
+    &__box {
+        display: none;
+        @media screen and (max-width: $tablet) {
+            display: block;
+        }
     }
 
     &__top {
@@ -16,6 +28,51 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            &--mobile {
+                transition: all 0.4s ease-in-out;
+                padding-top: 30px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                background-color: $dark;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                row-gap: 60px;
+                .header__nav {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    .nav__list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        align-items: center;
+                        text-align: center;
+                        li {
+                            font-size: 24px;
+                        }
+                    }
+                }
+                .header__box {
+                    position: fixed;
+                    top: 40px;
+                    right: 49px;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        @media screen and (max-width: $tablet) {
+            display: none;
         }
     }
 
@@ -32,6 +89,15 @@
             font-weight: 700;
             text-align: center;
             margin-bottom: clamp(81px, 5vw, 20px);
+            @media screen and (max-width: $tablet) {
+                margin-bottom: 41px;
+                font-size: 38px;
+                padding-bottom: clamp(80px, 5vw, 60px);
+            }
+            @media screen and (max-width: $mobile) {
+                margin-bottom: 0;
+                font-size: 35px;
+            }
         }
     }
 
@@ -42,6 +108,12 @@
         .text-right {
             display: flex;
             justify-content: flex-end;
+        }
+        @media screen and (max-width: $mobile) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
         }
     }
 }

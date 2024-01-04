@@ -2,3 +2,4 @@
 //= ../components/animation.js
 //= ../components/scroll.js
 //= ../components/appartments.js
+//= ../components/burger.js

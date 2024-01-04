@@ -1,5 +1,22 @@
 .video {
     padding-bottom: 180px;
+    position: relative;
+    @media screen and (max-width: $tablet){
+        padding-bottom: 50px;
+    }
+
+    &::before{
+        content: 'IV';
+        position: absolute;
+        top: 0;
+        left: calc(50% + 555px);
+        transform: translate(-50%, 0%);
+        font-size: 400px;
+        opacity: 0.02;
+        line-height: 1.15;
+        font-weight: 700;
+        font-family: $PlayfairDisplay;
+    }
 
     &__wrapper {
         display: flex;

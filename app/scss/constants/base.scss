@@ -64,9 +64,12 @@ a {
 	font-family: $PlayfairDisplay;
 	font-size: 36px;
 	font-weight: 700;
+	@media screen and (max-width: $tablet) {
+		font-size: 30px;
+	}
 }
 
-._none {
+.none {
 	display: none !important;
 }
 
@@ -112,4 +115,8 @@ a {
     100% {
         left: 150%;
     }
+}
+
+._lock {
+	overflow-y: hidden;
 }

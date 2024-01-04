@@ -1,7 +1,9 @@
 .info {
 
     font-size: 18px;
-
+    @media screen and (max-width: $mobile) {
+        font-size: 14px;
+    }
     display: flex;
     align-items: center;
     &::before {
