@@ -1,9 +1,9 @@
 const appartments = () => {
     const data = {
-        "Пентхаус Loft Олимп": "../images/appartments/01.webp",
-        "Апартаменты “Nice Loft”": "../images/appartments/02.webp",
-        "Апартаменты “Loft Studio”": "../images/appartments/03.webp",
-        "Loft квартира “Престиж”": "../images/appartments/04.webp"
+        "Пентхаус Loft Олимп": "./images/appartments/01.webp",
+        "Апартаменты “Nice Loft”": "./images/appartments/02.webp",
+        "Апартаменты “Loft Studio”": "./images/appartments/03.webp",
+        "Loft квартира “Престиж”": "./images/appartments/04.webp"
     };
 
     const appartmentsList = document.querySelector(".appartments__list");
